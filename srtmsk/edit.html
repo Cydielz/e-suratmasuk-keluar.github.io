@@ -62,7 +62,7 @@
     <hr class="sidebar-divider">
 
     <li class="nav-item">
-        <a class="nav-link" href="index.php">
+        <a class="nav-link" href="index.html">
             <i class="fa-solid fa-envelope"></i>
             <span>Surat Masuk</span></a>
     </li>
@@ -83,6 +83,11 @@
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 
+    <li class="nav-item">
+        <a class="nav-link" href="../admin/index.html">
+        <i class="fa-solid fa-user"></i>
+            <span>Data Admin</span></a>
+    </li>
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
@@ -216,23 +221,23 @@
              <input type="hidden" name="id_surat" value="<?php echo $hasil ['id_surat']?>">
                     <div class="mb-3">
                         <label  class="form-label">Tanggal Diterima</label>
-                        <input type="date" class="form-control" name="tanggal" value="<?php echo $hasil ['tanggal'] ?>">
+                        <input type="date" class="form-control" name="tanggal" value="">
                     </div>
                 
                     <div class="mb-3">
                         <label class="form-label">Nomor Surat</label>
-                        <input type="text" class="form-control" name="nomor_surat" value="<?php echo $hasil ['nomor_surat'] ?>">
+                        <input type="text" class="form-control" name="nomor_surat" value="">
                     </div>
              
            
                 <div class="mb-3">
                     <label class="form-label">Sumber Surat</label>
-                    <input type="text" class="form-control" name="sumber_surat" value="<?php echo $hasil ['sumber_surat'] ?>">
+                    <input type="text" class="form-control" name="sumber_surat" value="">
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Isi Ringkas Surat</label>
-                    <textarea class="form-control" type="text" col="5" name="isi"><?php echo $hasil ['isi'] ?></textarea>
+                    <textarea class="form-control" type="text" col="5" name="isi"></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-danger">Edit</button>

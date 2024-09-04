@@ -172,7 +172,7 @@
             }
         }
     ?> -->
-        <a href="add_data.php" class="btn btn-danger"> Add Data </a>
+        <a href="add_data.html" class="btn btn-danger"> Add Data </a>
         <hr>
         <div class="table-responsive">
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -187,37 +187,37 @@
                     </tr>
                 </thead>
                 <tbody>
-                <!-- <?php 
-                include "action/db_koneksi.php";
-                
-                $no=1;
-                
-                $sql = mysqli_query($connect, 'SELECT * FROM surat_keluar');
-			    while($data = mysqli_fetch_array($sql)) {
-             ?> -->
-
-                <tr>
-                    <td>
-                        <!-- <?=$no++?> -->
-                    </td>
-                    <td>
-                        <!-- <?=$data['nomor_surat'];?> -->
-                    </td>
-                    <td>
-                        <!-- <?=$data['keterangan'];?> -->
-                    </td>
-                    <td>
-                        <!-- <?=$data['tujuan_surat'];?> -->
-                    </td>
-                    <td>
-                        <!-- <?=$data['lampiran'];?> -->
-                    </td>
-                    <td>
-                    
-                    </td>
-                  </tr>
-              <!-- <?php } ?> -->
-    
+                    <tr>
+                        <td>1</td>
+                        <td>56/8/2023</td>
+                        <td>Undangan</td>
+                        <td>Panitia HBG Jemaat GPM Nuweletetu</td>
+                        <td>Panitia HBG.pdf</td>
+                        <td><a href="print.html" class="btn btn-primary btn-sm" ><i class="fa-solid fa-print"></i></a>  
+                            <a href="edit.html" class="btn btn-warning btn-sm"><i class="fa-solid fa-pen"></i></a> 
+                            <a href="hapus.html" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>SUKET/N.A.N/9/2023</td>
+                        <td>surat keterangan balik nama meteran</td>
+                        <td>Tabita Malalu</td>
+                        <td>suket.pdf</td>
+                        <td><a href="print.html" class="btn btn-primary btn-sm" ><i class="fa-solid fa-print"></i></a>  
+                            <a href="edit.html" class="btn btn-warning btn-sm"><i class="fa-solid fa-pen"></i></a> 
+                            <a href="hapus.html" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>102/SKU/N.A.N/VII/2024</td>
+                        <td>surat keterangan usaha</td>
+                        <td>Ricy womlay</td>
+                        <td>suket usaha.pdf</td>
+                        <td><a href="print.html" class="btn btn-primary btn-sm" ><i class="fa-solid fa-print"></i></a>  
+                            <a href="edit.html" class="btn btn-warning btn-sm"><i class="fa-solid fa-pen"></i></a> 
+                            <a href="hapus.html" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    </tr>
                 </tbody>
                 <tfoot>
                     <tr>

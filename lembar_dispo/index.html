@@ -157,22 +157,6 @@
         <h6 class="m-0 font-weight-bold text-primary">Lembar Disposisi</h6>
     </div>
     <div class="card-body">
-    <!-- <?php
-
-        if(isset($_GET['alert'])){
-            if($_GET['alert'] ==  "gagal_add"){
-                echo "<div class='alert alert-danger' role='alert'> ada kesalahan, coba lagi ! </div>";
-            }elseif($_GET['alert'] == "berhasil_add"){
-                echo "<div class='alert alert-success' role='alert'>data berhasil ditambahkan !</div>";
-            }elseif($_GET['alert'] == "berhasil_edit"){
-                echo "<div class='alert alert-success' role='alert'>data berhasil diubah !</div>";
-            }elseif($_GET['alert'] == "gagal_edit"){
-                echo "<div class='alert alert-danger' role='alert'>gagal mengubah data !</div>";
-            }elseif($_GET['alert'] == "berhasil_hapus"){
-                echo "<div class='alert alert-success' role='alert'>data berhasil dihapus !</div>";
-            }
-        }
-    ?> -->
         <a href="add_data.php" class="btn btn-danger"> Add Data </a>
         <hr>
         <div class="table-responsive">
@@ -193,51 +177,21 @@
                     </tr>
                 </thead>
                 <tbody>
-                <!-- <?php 
-                include "action/db_koneksi.php";
-
-                $sql = mysqli_query($connect, 'SELECT * FROM lembar_disposisi');
-			    while($data = mysqli_fetch_array($sql)) {
-             ?> -->
-
-                <tr>
-                   <td >
-                         <!-- <?=$data['surat_dari'];?>
-                    </td> -->
-                    <td >
-                        <!-- <?=$data['nomor_surat'];?>
-                    </td> -->
-                    <td>
-                        <!-- <?=$data['tanggal_surat'];?>
-                    </td> -->
-                    <td>
-                        <!-- <?=$data['diterima_tanggal'];?> -->
-                    </td>
-                    <td>
-                        <!-- <?=$data['no_agenda'];?>
-                    </td> -->
-                    <td>
-                        <!-- <?=$data['sifat'];?>
-                    </td> -->
-                    <td>
-                        <!-- <?=$data['perihal'];?>
-                    </td> -->
-                    <td>
-                        <!-- <?=$data['diteruskan'];?>
-                    </td> -->
-                    <td>
-                        <!-- <?=$data['hormat'];?>
-                    </td> -->
-                    <td>
-                        <!-- <?=$data['catatan'];?>
-                    </td> -->
-                    <td >
-                       
-                       
-                    </td>
-                  </tr>
-              <!-- <?php } ?> -->
-    
+                    <tr>
+                        <td>Kepala Kecamatan Amahai</td>
+                        <td>140/25/CA/2023</td>
+                        <td>12-06-2023</td>
+                        <td>12-06-2023</td>
+                        <td>1</td>
+                        <td>Segera</td>
+                        <td>Pemberitahuan</td>
+                        <td>Musa Maalalu</td>
+                        <td>Koordinasi/Konfirmasikan</td>
+                        <td>-</td>
+                        <td><a href="print.html" class="btn btn-primary btn-sm" ><i class="fa-solid fa-print"></i></a>  
+                            <a href="edit.html" class="btn btn-warning btn-sm"><i class="fa-solid fa-pen"></i></a> 
+                            <a href="hapus.html" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></a></td>
+                    </tr>
                 </tbody>
                 <tfoot style="font-size: small;">
                     <tr>
