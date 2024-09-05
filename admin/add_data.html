@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Data Admin</title>
+    <title>Add Data admin</title>
 
     <!-- Custom fonts for this template-->
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -38,7 +38,7 @@
   <div id="wrapper">
 
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-warning sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-gradient-warning sidebar sidebar-light accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -79,15 +79,15 @@
         <i class="fa-solid fa-note-sticky"></i>
             <span>Lembar Disposisi</span></a>
     </li>
-    
+
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
+
     <li class="nav-item">
         <a class="nav-link" href="index.html">
         <i class="fa-solid fa-user"></i>
             <span>Data Admin</span></a>
     </li>
-    
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
         <button class="rounded-circle border-0" id="sidebarToggle"></button>
@@ -149,77 +149,61 @@
 
 <!-- Page Heading -->
 <h1 class="h3 mb-2 text-gray-800">DATA ADMIN</h1>
-<p class="mb-4"> klik add data untuk menambahkan data.</p>
+<p class="mb-4"></p>
 
 <!-- DataTales Example -->
-<div class="card shadow mb-4">
-    <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Data Admin</h6>
-    </div>
-    <div class="card-body">
-    <!-- <?php
-
-        if(isset($_GET['alert'])){
-            if($_GET['alert'] ==  "gagal_add"){
-                echo "<div class='alert alert-danger' role='alert'> ada kesalahan, coba lagi ! </div>";
-            }elseif($_GET['alert'] == "berhasil_add"){
-                echo "<div class='alert alert-success' role='alert'>data berhasil ditambahkan !</div>";
-            }elseif($_GET['alert'] == "berhasil_edit"){
-                echo "<div class='alert alert-success' role='alert'>data berhasil diubah !</div>";
-            }elseif($_GET['alert'] == "gagal_edit"){
-                echo "<div class='alert alert-danger' role='alert'>gagal mengubah data !</div>";
-            }elseif($_GET['alert'] == "berhasil_hapus"){
-                echo "<div class='alert alert-success' role='alert'>data berhasil dihapus !</div>";
-            }
-        }
-    ?> -->
-        <a href="add_data.html" class="btn btn-primary"> Add Data </a>
-        <hr>
-        <div class="table-responsive">
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Nama Lengkap</th>
-                        <th>Alamat</th>
-                        <th>Email</th>
-                        <th>No. Handphone</th>
-                        <th>Username</th>
-                        <th>Password</th>
-                        <th>Tools</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Yolandris leloltery</td>
-                        <td>Mangga Dua</td>
-                        <td>Yolandrisleloltery@gmail.com</td>
-                        <td>082234567890</td>
-                        <td>admin</td>
-                        <td>12345678</td>
-                        <td><a href="print.html" class="btn btn-primary btn-sm" ><i class="fa-solid fa-print"></i></a>  
-                            <a href="edit.html" class="btn btn-warning btn-sm"><i class="fa-solid fa-pen"></i></a> 
-                            <a href="hapus.html" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i></a></td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <th>No</th>
-                        <th>Tanggal Penerimaan</th>
-                        <th>Nomor Surat</th>
-                        <th>Sumber Surat</th>
-                        <th>Isi Ringkas Surat</th>
-                        <th>Lampiran</th>
-                        <th>Tools</th>
-                       
-                    </tr>
-                </tfoot>
-                <tbody>
-                    
-                </tbody>
-            </table>
+<div class="container">
+    <div class="col-sm-6">
+    <div class="card">
+        <div class="card-header">
+            <label>Add Data Admin</label>
         </div>
+        <div class="card-body">
+        <!-- <?php
+
+                if(isset($_GET['alert'])){
+                    if($_GET['alert'] ==  "gagal"){
+                        echo "<div class='alert alert-danger' role='alert'> ada kesalahan, coba lagi ! </div>";
+                    }elseif($_GET['alert'] == "berhasil"){
+                        echo "<div class='alert alert-success' role='alert'>data berhasil ditambahkan !</div>";
+                    }
+                }
+                ?> -->
+             <form method="post" action="action/p_add_data.php" enctype="multipart/form-data">
+            
+                    <div class="mb-3">
+                        <label  class="form-label">Nama Lengkap</label>
+                        <input type="text" class="form-control" name="nama">
+                    </div>
+                
+                    <div class="mb-3">
+                        <label class="form-label">Alamat</label>
+                        <input type="text" class="form-control" name="alamat">
+                    </div>
+             
+           
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email">
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">No. Handphone</label>
+                    <input type="number" class="form-control" name="no_hp">
+                </div>
+            
+                <div class="mb-3">
+                    <label  class="form-label">Username</label>
+                        <input type="text" class="form-control" name="Username">
+                </div>
+
+                <div class="mb-3">
+                    <label  class="form-label">Password</label>
+                        <input type="password" class="form-control" name="Password">
+                </div>
+
+                <button type="submit" class="btn btn-danger">Tambah</button>
+            </form>
     </div>
 </div>
 
